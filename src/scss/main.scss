@@ -1,0 +1,86 @@
+@import 'var.scss';
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #303030;
+}
+  
+[data-theme='dark'] {
+    --bg-color: #003f74;
+    --text-color: #ffffff;
+}
+[data-theme='purple'] {
+    --bg-color: #6b5b95;
+    --text-color: #ffffff;
+}
+[data-theme='yellow'] {
+    --bg-color: #feb236;
+    --text-color: #ffffff;
+}
+[data-theme='cyan'] {
+    --bg-color: cyan;
+    --text-color: #000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+main{
+    padding: 0 0 50px;
+}
+
+
+// Header CSS =======>
+nav.makeblack{
+    background-color: #000 !important;
+
+    *, *:hover{
+        color: #fff !important;
+        
+    }
+    .nav-link.active{
+        color: #fff;
+    }
+    .dropdown-menu a{
+        color: $blackolor !important;
+    }
+}
+
+// color pallette
+.color-palette {
+    display: flex;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #b8b8b8;
+    margin-right: 20px;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border 0.2s ease;
+}
+
+.color-circle.selected {
+    border: 1px solid #333;
+}
+
+.purple { background-color: purple; }
+.yellow { background-color: yellow; }
+.cyan   { background-color: cyan; }
+
+// Alert Css
+.myAlert{
+    width: fit-content;
+    margin: 0 auto;
+    
+    button{
+        margin-left: 10px;
+    }
+}
